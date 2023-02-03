@@ -1,0 +1,35 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
+})
+export class HomePage {
+
+  //Objeto responsável pelos ícones e seus respectivos titles
+  public options: Array<any> = [
+    { icon: 'person-add-outline', text: 'Indicar amigos' },
+    { icon: 'phone-portrait-outline', text: 'Recarga de celular' },
+    { icon: 'wallet-outline', text: 'Depositar' },
+    { icon: 'options-outline', text: 'Ajustar limite' },
+    { icon: 'help-circle-outline', text: 'Me ajuda' },
+    { icon: 'barcode-outline', text: 'Pagar' },
+    { icon: 'lock-open-outline', text: 'Bloquear cartão' },
+    { icon: 'card-outline', text: 'Cartão virtual' },
+  ]
+
+  //freeMode -> passa o slide livremente de acordo com o toque e a velocidade
+  public slidesOptions: any = { slidesPerView: 3, freeMode: true }
+
+  public items: Array<any> = [
+    { icon: 'help-circle-outline', text: 'Me ajude'},
+    { icon: 'person-outline', text: 'Perfil' },
+    { icon: 'cash-outline', text: 'Configurar conta' },
+    { icon: 'card-outline', text: 'Configurar cartão' },
+    { icon: 'phone-portrait-outline', text: 'Configurações do app' },
+  ];
+
+  constructor() {}
+
+}
